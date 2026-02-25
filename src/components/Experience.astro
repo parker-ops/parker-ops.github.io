@@ -1,0 +1,104 @@
+---
+const roles = [
+  {
+    title: "Co-Owner — Sales & Business Development",
+    company: "OneWave AI",
+    period: "2025 – Present",
+    description: "Leading sales and business development for an AI-focused venture helping small and medium-sized businesses adopt intelligent solutions. Driving go-to-market strategy, building partnerships, and evangelizing practical AI adoption.",
+    highlights: ["Go-to-market strategy", "SMB AI adoption", "Partnership development"],
+    current: true,
+  },
+  {
+    title: "Sales & Marketing Manager",
+    company: "Miami Christmas Lights",
+    period: "Sep 2024 – Present",
+    description: "First sales leadership hire for a 60-person organization. Built the entire revenue infrastructure from scratch — training programs, sales processes, and team frameworks that drove 40% YoY growth.",
+    highlights: [
+      "$1.3M closed in 4 months (zero training)",
+      "$1.9M total sales — company record",
+      "Conversion rate: 22% → 38%",
+      "Built team from 0 to 7 members",
+      "10,000+ qualified leads annually",
+    ],
+  },
+  {
+    title: "Senior Account Executive",
+    company: "vivenu",
+    period: "Sep 2022 – Sep 2024",
+    description: "Key player at a high-growth SaaS ticketing startup. Sold API-first white-label solutions to event organizers, venues, and festivals across North America and Europe.",
+    highlights: [
+      "Rookie of the Year — $1M ACV in year one",
+      "$1.95M+ total ACV across tenure",
+      "Complex technical sales (API, white-label, payments)",
+      "Mentored junior AEs on strategy & closing",
+    ],
+  },
+  {
+    title: "Director of Enterprise Sales → AE",
+    company: "GovSpend",
+    period: "Feb 2018 – Sep 2022",
+    description: "Rose from Account Executive to Director over 4+ years at a government procurement intelligence platform. Led a 75-person sales org, introduced value-based selling that increased ACV by 51%.",
+    highlights: [
+      "Led 75-person team — $200K ACV in Q1 (company record)",
+      "Exceeded quota 16 consecutive months",
+      "51% ACV increase via value-based selling methodology",
+    ],
+  },
+];
+---
+
+<section id="experience" class="py-24 sm:py-32 px-6 bg-midnight-light/40">
+  <div class="max-w-5xl mx-auto">
+    <!-- Section header -->
+    <div class="reveal mb-16">
+      <p class="text-amber text-sm font-medium tracking-[0.25em] uppercase mb-3">Experience</p>
+      <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold">
+        Where I've <span class="italic text-amber">made an impact</span>.
+      </h2>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative">
+      <!-- Vertical line -->
+      <div class="absolute left-4 md:left-8 top-0 bottom-0 w-px bg-midnight-lighter"></div>
+
+      <div class="space-y-12">
+        {roles.map((role, i) => (
+          <div class="reveal relative pl-12 md:pl-20">
+            {/* Timeline dot */}
+            <div class={`absolute left-2.5 md:left-6.5 top-1.5 w-3 h-3 rounded-full border-2 ${
+              role.current
+                ? 'bg-amber border-amber shadow-[0_0_12px_rgba(200,160,74,0.4)]'
+                : 'bg-midnight border-warm-gray/40'
+            }`}></div>
+
+            {/* Card */}
+            <div class="bg-midnight-light border border-midnight-lighter rounded-2xl p-6 sm:p-8 hover:border-amber/20 transition-colors duration-300">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
+                <div>
+                  <h3 class="font-heading text-xl sm:text-2xl font-semibold text-warm-white">
+                    {role.title}
+                  </h3>
+                  <p class="text-amber font-medium mt-1">{role.company}</p>
+                </div>
+                <span class="text-sm text-warm-gray whitespace-nowrap font-medium tracking-wide">
+                  {role.period}
+                </span>
+              </div>
+
+              <p class="text-warm-gray leading-relaxed mb-5">{role.description}</p>
+
+              <ul class="flex flex-wrap gap-2">
+                {role.highlights.map((h) => (
+                  <li class="text-xs bg-amber-muted text-amber-light px-3 py-1.5 rounded-full font-medium">
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

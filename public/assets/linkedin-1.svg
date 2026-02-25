@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect fill="#181b25" width="800" height="600"/>
+  <rect fill="#222633" x="40" y="40" width="720" height="520" rx="16"/>
+  <circle fill="#c8a04a" cx="120" cy="140" r="50"/>
+  <text fill="#f0ece2" font-family="system-ui" font-size="28" font-weight="600" x="190" y="130">Parker Newell</text>
+  <text fill="#a8a29e" font-family="system-ui" font-size="16" x="190" y="158">Co-Owner at OneWave AI</text>
+  <rect fill="#0f1117" x="80" y="200" width="640" height="1" />
+  <text fill="#a8a29e" font-family="system-ui" font-size="14" x="80" y="240">LinkedIn Profile Screenshot</text>
+  <text fill="#c8a04a" font-family="system-ui" font-size="12" x="80" y="270">Replace with actual screenshot: public/assets/linkedin-1.png</text>
+</svg>

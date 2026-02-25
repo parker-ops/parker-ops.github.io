@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(/usr/bin/python3:*)",
+      "Bash(node:*)",
+      "Bash(bun:*)",
+      "Bash(curl:*)",
+      "Bash(export PATH=\"$HOME/.local/bin:$PATH\")",
+      "Bash(npm:*)",
+      "Bash(PATH=\"$HOME/.local/bin:$PATH\")",
+      "Bash(yes:*)",
+      "Bash(\"$HOME/.local/bin/npm\" create astro@latest . -- --template minimal --no-install --no-git --typescript relaxed)",
+      "Bash(export PATH=\"/Users/parkernewell/.local/bin:$PATH\")",
+      "Bash(export PATH=\"/Users/parkernewell/.local/bin:/usr/bin:$PATH\")",
+      "Bash(/usr/bin/curl -s http://localhost:4321/)",
+      "Bash(/usr/bin/head:*)",
+      "Bash(/usr/bin/grep:*)",
+      "Bash(git --version:*)",
+      "Bash(gh --version:*)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}

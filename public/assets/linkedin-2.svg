@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect fill="#181b25" width="800" height="600"/>
+  <rect fill="#222633" x="40" y="40" width="720" height="520" rx="16"/>
+  <text fill="#f0ece2" font-family="system-ui" font-size="22" font-weight="600" x="80" y="100">Experience & Impact</text>
+  <rect fill="#c8a04a" x="80" y="120" width="60" height="3" rx="1"/>
+  <text fill="#a8a29e" font-family="system-ui" font-size="14" x="80" y="160">LinkedIn Experience Screenshot</text>
+  <text fill="#c8a04a" font-family="system-ui" font-size="12" x="80" y="190">Replace with actual screenshot: public/assets/linkedin-2.png</text>
+</svg>
